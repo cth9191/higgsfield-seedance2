@@ -78,7 +78,7 @@
 
 | # | Skill | Use Case |
 |---|---|---|
-| 16 | [Video Prompt Builder](skills/16-video-prompt-builder/SKILL.md) | Shot-by-shot builder — turn any creative brief into structured Seedance prompts |
+| 16 | [Shot Builder](skills/16-shot-builder/SKILL.md) | Structural — turn a creative brief into a shot-by-shot Seedance breakdown |
 
 ---
 
@@ -142,7 +142,7 @@ higgsfield-seedance2/
     ├── 13-fashion-lookbook/
     ├── 14-food-beverage/
     ├── 15-real-estate/
-    └── 16-video-prompt-builder/
+    └── 16-shot-builder/
         ├── SKILL.md
         └── references/
             └── effects-breakdown-reference.txt

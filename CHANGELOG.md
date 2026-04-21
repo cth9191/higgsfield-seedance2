@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ## [1.1.0] — 2026-04-20
 
 ### Added
-- `16-video-prompt-builder` — Shot-by-shot prompt builder skill. Takes a creative brief and emits structured Seedance 2.0 prompts with effects breakdown reference.
+- `16-shot-builder` — Structural shot-by-shot breakdown skill (name `seedance-shot-builder`). Takes a creative brief and emits a structured Seedance 2.0 shot list with an effects breakdown reference. Scoped triggers so it complements, rather than collides with, style skills 01–15.
 
 ### Changed
 - Repo converted to English-only (all Chinese translations and non-English README locales removed).

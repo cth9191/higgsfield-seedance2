@@ -1,9 +1,9 @@
 ---
-name: video-prompt-builder
-description: Generate detailed, shot-by-shot AI video prompts for Seedance 2.0 from a creative brief. Use this skill whenever the user wants to create a video prompt, write a shot list, plan a video sequence, describe a video concept for AI generation, or mentions Seedance. Also trigger when the user describes a scene, ad concept, brand film, product video, or any visual sequence they want turned into structured prompts — even if they don't explicitly say "video prompt." Trigger on phrases like "write me a video prompt", "Seedance prompt", "shot list", "plan a video", "video concept", "create a sequence", "brand film prompt", "ad prompt", or any time the user describes what they want to happen in a video and needs it translated into generation-ready prompts.
+name: seedance-shot-builder
+description: Build a structured, shot-by-shot breakdown for a Seedance 2.0 video when the user explicitly wants a detailed shot list or scene-by-scene plan. Use ONLY for structured breakdown requests — phrases like "shot list", "shot-by-shot", "break this into shots", "scene breakdown", "storyboard prompt", "structured video prompt", "shot breakdown", "beat-by-beat". Do NOT trigger on general video prompt or style-specific requests (cinematic, 3D CGI, cartoon, anime, ad, real-estate, etc.) — those belong to the dedicated style skills 01–15. Complements the style skills: this one handles structure, they handle aesthetic.
 ---
 
-# Video Prompt Builder for Seedance 2.0
+# Seedance Shot Builder
 
 Build cinematic, shot-by-shot video prompts from a creative brief. Every output follows a structured effects breakdown format designed to give Seedance 2.0 maximum detail on camera work, effects, transitions, pacing, and energy arc.
 
