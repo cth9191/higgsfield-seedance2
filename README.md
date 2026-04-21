@@ -19,7 +19,7 @@
 
 # What Is This?
 
-15 specialized Claude skills built for Seedance 2.0 on Higgsfield. Each skill turns Claude into a prompt engineer for a specific video style — generating large, detailed, paste-ready prompts with powerful **2-second hooks** that stop the scroll.
+16 specialized Claude skills built for Seedance 2.0 on Higgsfield. Each skill turns Claude into a prompt engineer for a specific video style — generating large, detailed, paste-ready prompts with powerful **2-second hooks** that stop the scroll.
 
 👉 **[Start creating on Higgsfield](https://higgsfield.ai/create/video?model=seedance_2_0)**
 
@@ -42,7 +42,7 @@
 
 ---
 
-## 🎯 The 15 Skills
+## 🎯 The 16 Skills
 
 ### Creative Styles
 
@@ -73,6 +73,12 @@
 | 13 | [Fashion Lookbook](skills/13-fashion-lookbook/SKILL.md) | Fashion — lookbooks, walks, outfits, campaigns |
 | 14 | [Food & Beverage](skills/14-food-beverage/SKILL.md) | Food — restaurant, recipe, ASMR, appetite appeal |
 | 15 | [Real Estate](skills/15-real-estate/SKILL.md) | Property — tours, architecture, interior design |
+
+### Utility
+
+| # | Skill | Use Case |
+|---|---|---|
+| 16 | [Video Prompt Builder](skills/16-video-prompt-builder/SKILL.md) | Shot-by-shot builder — turn any creative brief into structured Seedance prompts |
 
 ---
 
@@ -135,16 +141,19 @@ higgsfield-seedance2/
     ├── 12-brand-story/
     ├── 13-fashion-lookbook/
     ├── 14-food-beverage/
-    └── 15-real-estate/
-        └── SKILL.md
+    ├── 15-real-estate/
+    └── 16-video-prompt-builder/
+        ├── SKILL.md
+        └── references/
+            └── effects-breakdown-reference.txt
 ```
 
 ---
 
 ## 📊 Stats
 
-- **Skills:** 15
-- **Total files:** 15 SKILL.md
+- **Skills:** 16
+- **Total files:** 16 SKILL.md + 1 reference doc
 - **Language:** English
 
 ---

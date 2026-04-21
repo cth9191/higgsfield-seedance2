@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ---
 
+## [1.1.0] — 2026-04-20
+
+### Added
+- `16-video-prompt-builder` — Shot-by-shot prompt builder skill. Takes a creative brief and emits structured Seedance 2.0 prompts with effects breakdown reference.
+
+### Changed
+- Repo converted to English-only (all Chinese translations and non-English README locales removed).
+
+---
+
 ## [1.0.0] — 2026-04-09
 
 ### Added
