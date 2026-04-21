@@ -1,6 +1,6 @@
 # GitHub Repository Setup Guide
 
-## 目录 | Table of Contents
+## Table of Contents
 
 - [Creating Repository](#creating-repository)
 - [Local Git Setup](#local-git-setup)
@@ -14,7 +14,7 @@
 
 ## Creating Repository
 
-### 在 GitHub 上创建新仓库 | Create New Repository on GitHub
+### Create New Repository on GitHub
 
 1. Go to [github.com/new](https://github.com/new)
 2. Fill in repository details:
@@ -27,24 +27,11 @@
 3. Do NOT initialize with README (we already have one)
 4. Click "Create repository"
 
-### GitHub 上创建新仓库 | 在 GitHub 创建仓库
-
-1. 访问 [github.com/new](https://github.com/new)
-2. 填写仓库详情：
-   - **仓库名称:** `seedance-2-skills`
-   - **描述:** "为 Seedance 2.0 on Higgsfield 准备的 15 个提示词工程技能集 — 生成电影级、商业级和行业特定的 AI 视频内容"
-   - **可见性:** 选择 `Public` 或 `Private`
-     - `Public` — 与社区共享，接受贡献
-     - `Private` — 仅在团队内部，完全访问控制
-
-3. 不要初始化 README（我们已经有了）
-4. 点击 "Create repository"
-
 ---
 
 ## Local Git Setup
 
-### Initialize and Configure | 初始化和配置
+### Initialize and Configure
 
 Run the provided setup script:
 
@@ -70,11 +57,10 @@ git add -A
 git commit -m "chore: Initialize Seedance 2.0 Skills repository
 
 - Add 15 prompt engineering skills for Seedance 2.0 on Higgsfield
-- Include setup scripts and documentation
-- Support both English and Chinese locales"
+- Include setup scripts and documentation"
 ```
 
-### Add Remote and Push | 添加远程仓库并推送
+### Add Remote and Push
 
 ```bash
 # Add remote repository
@@ -91,7 +77,7 @@ git branch -M main
 git push -u origin main
 ```
 
-#### Generating SSH Key (Alternative to HTTPS) | 生成 SSH 密钥（HTTPS 的替代方案）
+#### Generating SSH Key (Alternative to HTTPS)
 
 If you prefer SSH authentication:
 
@@ -110,9 +96,9 @@ git remote add origin git@github.com:USERNAME/seedance-2-skills.git
 
 ## Configuring Repository
 
-### Repository Settings on GitHub | GitHub 上的仓库设置
+### Repository Settings on GitHub
 
-#### 1. Basic Information | 基本信息
+#### 1. Basic Information
 
 Go to Settings > General:
 
@@ -120,7 +106,7 @@ Go to Settings > General:
   - Add description: "15 AI video prompt engineering skills for Seedance 2.0 on Higgsfield"
   - Add URL: `https://seedance.example.com` (if applicable)
 
-#### 2. Topics | 话题标签
+#### 2. Topics
 
 Add relevant topics (Settings > General > Topics):
 
@@ -135,12 +121,12 @@ ai-tools
 video-production
 ```
 
-#### 3. Default Branch | 默认分支
+#### 3. Default Branch
 
 Settings > General > Default branch:
 - Set to `main`
 
-#### 4. License | 许可证
+#### 4. License
 
 Add appropriate license to repository:
 
@@ -157,7 +143,7 @@ Recommended: MIT or Creative Commons (CC BY-SA 4.0)
 
 ## Repository Settings
 
-### Branch Protection Rules | 分支保护规则
+### Branch Protection Rules
 
 Protect the `main` branch (Settings > Branches):
 
@@ -169,12 +155,9 @@ Protect the `main` branch (Settings > Branches):
    - ✓ Require status checks to pass
    - ✓ Include administrators
 
-```
 This prevents accidental direct commits to main and ensures code review.
-这可以防止意外直接提交到 main 并确保代码审查。
-```
 
-### Collaborator Access | 协作者访问
+### Collaborator Access
 
 Settings > Collaborators > Add people:
 
@@ -193,7 +176,7 @@ Settings > Collaborators > Add people:
 | Triage | - | - | - | - |
 | Pull | - | - | - | - |
 
-### Required Reviewers | 必需审查者
+### Required Reviewers
 
 Settings > Rules > Require pull request reviews:
 - Number of required reviews before merge: `1` or `2`
@@ -204,9 +187,9 @@ Settings > Rules > Require pull request reviews:
 
 ## Collaboration Workflow
 
-### For Team Development | 团队开发工作流
+### For Team Development
 
-#### 1. Create Feature Branch | 创建功能分支
+#### 1. Create Feature Branch
 
 ```bash
 # Update main branch
@@ -225,7 +208,7 @@ git commit -m "feat: Add enhanced prompts for cinematic skill
 - Enhanced depth of field parameters"
 ```
 
-#### 2. Push and Create Pull Request | 推送并创建拉取请求
+#### 2. Push and Create Pull Request
 
 ```bash
 # Push to GitHub
@@ -238,7 +221,7 @@ git push -u origin feature/skill-improvements
 # 4. Add description and submit
 ```
 
-#### 3. Code Review and Merge | 代码审查和合并
+#### 3. Code Review and Merge
 
 After approval:
 
@@ -254,38 +237,38 @@ git branch -d feature/skill-improvements
 git push origin --delete feature/skill-improvements
 ```
 
-#### 4. Pull Request Template | 拉取请求模板
+#### 4. Pull Request Template
 
 Create `.github/pull_request_template.md`:
 
 ```markdown
-## Description | 描述
+## Description
 Brief description of changes
 
-## Type | 类型
-- [ ] Skill enhancement | 技能增强
-- [ ] Bug fix | 错误修复
-- [ ] Documentation | 文档
-- [ ] New skill | 新技能
-- [ ] Refactoring | 重构
+## Type
+- [ ] Skill enhancement
+- [ ] Bug fix
+- [ ] Documentation
+- [ ] New skill
+- [ ] Refactoring
 
-## Changes | 更改
-- List of specific changes | 具体变更列表
+## Changes
+- List of specific changes
 
-## Testing | 测试
-How was this tested? | 如何测试？
+## Testing
+How was this tested?
 
-## Checklist | 清单
-- [ ] Tests pass | 通过测试
-- [ ] Documentation updated | 文档已更新
-- [ ] No breaking changes | 无破坏性更改
+## Checklist
+- [ ] Tests pass
+- [ ] Documentation updated
+- [ ] No breaking changes
 ```
 
 ---
 
 ## GitHub Pages (Optional)
 
-### Enable GitHub Pages | 启用 GitHub Pages
+### Enable GitHub Pages
 
 For hosting documentation or portfolio:
 
@@ -297,7 +280,7 @@ For hosting documentation or portfolio:
 
 GitHub Pages will be available at: `https://USERNAME.github.io/seedance-2-skills`
 
-### Create Documentation Site | 创建文档网站
+### Create Documentation Site
 
 ```bash
 # Create docs folder
@@ -316,7 +299,7 @@ git push origin main
 
 ## Best Practices
 
-### Commit Message Guidelines | 提交信息指南
+### Commit Message Guidelines
 
 Follow [Conventional Commits](https://www.conventionalcommits.org/):
 
@@ -329,28 +312,27 @@ Follow [Conventional Commits](https://www.conventionalcommits.org/):
 ```
 
 Types:
-- `feat:` New feature | 新功能
-- `fix:` Bug fix | 错误修复
-- `docs:` Documentation | 文档
-- `style:` Code style (formatting) | 代码风格
-- `refactor:` Code refactoring | 代码重构
-- `test:` Tests | 测试
-- `chore:` Build, CI, dependencies | 构建、CI、依赖
-- `perf:` Performance improvement | 性能提升
+- `feat:` New feature
+- `fix:` Bug fix
+- `docs:` Documentation
+- `style:` Code style (formatting)
+- `refactor:` Code refactoring
+- `test:` Tests
+- `chore:` Build, CI, dependencies
+- `perf:` Performance improvement
 
 Examples:
 
 ```bash
-# Good | 好的例子
 git commit -m "feat(cinematic): Add anamorphic lens options"
 git commit -m "fix(3d-cgi): Correct shader parameter documentation"
 git commit -m "docs: Update installation instructions"
 
-# Include issue reference | 包含问题引用
+# Include issue reference
 git commit -m "fix(cartoon): Improve cel-shading quality - fixes #42"
 ```
 
-### Branch Naming | 分支命名
+### Branch Naming
 
 ```
 feature/skill-name        # New skill or enhancement
@@ -360,7 +342,7 @@ docs/documentation-topic  # Documentation
 refactor/component-name   # Refactoring
 ```
 
-### .gitignore Configuration | 配置 .gitignore
+### .gitignore Configuration
 
 ```bash
 # Create or update .gitignore
@@ -404,18 +386,18 @@ git commit -m "chore: Add gitignore configuration"
 git push origin main
 ```
 
-### README Best Practices | README 最佳实践
+### README Best Practices
 
 Ensure your README includes:
 
-- Clear project description | 清晰的项目描述
-- Installation instructions | 安装说明
-- Quick start guide | 快速开始指南
-- Feature list | 功能列表
-- Contributing guidelines | 贡献指南
-- License information | 许可证信息
+- Clear project description
+- Installation instructions
+- Quick start guide
+- Feature list
+- Contributing guidelines
+- License information
 
-### Regular Maintenance | 定期维护
+### Regular Maintenance
 
 ```bash
 # Keep main branch clean
@@ -436,7 +418,7 @@ git status
 
 ## Troubleshooting
 
-### Cannot Push? | 无法推送？
+### Cannot Push?
 
 ```bash
 # Check remote configuration
@@ -449,7 +431,7 @@ git remote set-url origin https://github.com/USERNAME/seedance-2-skills.git
 git push -u origin main
 ```
 
-### Merge Conflicts? | 合并冲突？
+### Merge Conflicts?
 
 ```bash
 # Abort merge if needed
@@ -462,7 +444,7 @@ git add .
 git commit -m "chore: Resolve merge conflicts"
 ```
 
-### Forgot to Create .gitignore? | 忘记创建 .gitignore？
+### Forgot to Create .gitignore?
 
 ```bash
 # Remove previously tracked files
@@ -483,7 +465,6 @@ git commit -m "chore: Update gitignore"
 
 ---
 
-**Happy coding! 祝编码愉快！**
+**Happy coding!**
 
 For questions or issues, please create a GitHub Issue with detailed information.
-如有问题，请创建 GitHub Issue 并提供详细信息。
